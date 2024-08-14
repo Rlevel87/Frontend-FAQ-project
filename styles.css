@@ -1,0 +1,73 @@
+
+:root{
+   --White: hsl(0, 0%, 100%);
+   --Lightpink: hsl(275, 100%, 95%);
+   --Grayishpurple: hsl(293, 22%, 48%);
+   --Darkpurple: hsl(292, 83%, 44%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Work sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;   
+    background-size: 100%;
+    background-attachment: fixed;
+    background-color: var(--Lightpink);
+}
+.container{
+    width: 550px; 
+    background-color: var(--White);
+    border-radius: .5rem;
+    padding: 15px 25px;
+    
+    
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    font-size: larger;
+}
+.star{
+    margin-right: 10px;
+    
+}
+.border{
+   margin-bottom: 40px;
+   border-bottom: 1px solid hsl(0, 0%, 0%, 0.1);
+}
+.plusIcon{
+   float: right;
+   cursor: pointer;
+}
+h3:hover{
+    color: var(--Darkpurple);
+    cursor: pointer;
+}
+p{
+    display: none;
+    color: var(--Grayishpurple);
+}
+footer{
+    display: flex;
+    text-align: center;
+
+}
+@media (max-width:760px){
+    body{
+        background: url('images/background-pattern-mobile.svg') no-repeat;
+        background-size: 100%;
+        min-width: 375px;
+        background-color: var(--Lightpink);
+    }
+    .container{
+        margin: 0 1.5rem;
+    }
+}
